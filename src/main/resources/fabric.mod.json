@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cannacraft",
+	"version": "${version}",
+	"name": "CannaCraft",
+	"description": "It's all about the Cannabis Man!",
+	"authors": [
+		"ZedZedTop"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Mit",
+	"icon": "*",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"net.zedzedtop.cannacraft.CannaCraftClient"
+		],
+		"main": [
+			"net.zedzedtop.cannacraft.CannaCraft"
+		],
+		"fabric-datagen": [
+			"net.zedzedtop.cannacraft.CannaCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"cannacraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
